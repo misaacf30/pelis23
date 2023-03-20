@@ -6,7 +6,7 @@ import { useState } from "react";
 import { MdOutlineKeyboardArrowLeft } from 'react-icons/md'
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md'
 
-export default function PosterSlider( {movies, section, mediaType} ) {
+export default function PosterSlider( {movies, section, mediaType, firstSlider} ) {
     const imgPath = "https://image.tmdb.org/t/p/original"
 
     const toLeft = () => {
@@ -52,7 +52,7 @@ export default function PosterSlider( {movies, section, mediaType} ) {
                         src={imgPath + movie.poster_path}
                         width={600}
                         height={900}
-                        priority={false}
+                        priority={firstSlider}
                         alt="Poster image"                       
                         className="max-w-[120px] xl:max-w-[170px] h-auto p-1
                         cursor-pointer hover:scale-105 ease-in-out duration-300"

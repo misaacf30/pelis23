@@ -19,6 +19,7 @@ export default async function MovieTrending() {
           movies={data.results}
           section="movietrending"
           mediaType="movie"
+          firstSider={true}
         />
       </section>
   )

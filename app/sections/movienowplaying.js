@@ -18,6 +18,7 @@ export default async function MovieNowPlaying() {
           movies={data.results}
           section="movienowplaying"
           mediaType="movie"
+          firstSider={false}
         />   
       </section>
     )

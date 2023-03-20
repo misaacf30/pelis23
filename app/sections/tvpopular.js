@@ -18,6 +18,7 @@ export default async function TvPopular() {
           movies={data.results}
           section="tvpopular"
           mediaType="tv"
+          firstSider={false}
         />
       </section>
   )

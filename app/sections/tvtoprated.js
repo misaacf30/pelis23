@@ -18,6 +18,7 @@ export default async function TvTopRated() {
           movies={data.results}
           section="tvtoprated"
           mediaType="tv"
+          firstSider={false}
         />       
       </section>
   )
